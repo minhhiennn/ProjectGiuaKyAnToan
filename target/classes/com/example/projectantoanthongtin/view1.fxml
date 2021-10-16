@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projectantoanthongtin.View1Controller">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <Pane prefWidth="220.0" style="-fx-background-color: #FF00FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="22.0" layoutY="233.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="176.0" text="Screen 4" onAction="#onActionBt1" />
+                  <Button layoutX="22.0" layoutY="96.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="176.0" text="Screen 2" onAction="#onActionBt2" />
+                  <Button layoutX="22.0" layoutY="25.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="176.0" text="Screen 1" onAction="#onActionBt3" />
+                  <Button layoutX="22.0" layoutY="168.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="176.0" text="Screen 3" onAction="#onActionBt4" />
+                  <Button layoutX="22.0" layoutY="298.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="176.0" text="Screen 5" onAction="#onActionBt5" />
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="10.0" top="10.0" />
+               </BorderPane.margin>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
