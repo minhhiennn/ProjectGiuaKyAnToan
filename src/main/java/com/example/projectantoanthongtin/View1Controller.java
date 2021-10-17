@@ -1,57 +1,88 @@
 package com.example.projectantoanthongtin;
 
-import javafx.concurrent.Worker;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.geometry.Insets;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.Pane;
+import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.File;
+import java.util.List;
 
 public class View1Controller {
 
     @FXML
-    private BorderPane mainPane;
+    private AnchorPane primaryStagePane;
 
     @FXML
     public void onActionBt1(ActionEvent actionEvent) {
-        Stage stage = new Stage();
+        System.out.println(primaryStagePane.getId());
+        Stage stage = (Stage) primaryStagePane.getScene().getWindow();
         FileChooser fileChooser = new FileChooser();
-        File selectedFile = fileChooser.showOpenDialog(stage);
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Text Files", "*.txt"),
+                new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
+                new FileChooser.ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
+                new FileChooser.ExtensionFilter("All Files", "*.*"));
+        List<File> selectedMultiOrOneFile = fileChooser.showOpenMultipleDialog(stage);
+        if (selectedMultiOrOneFile != null){
+           selectedMultiOrOneFile.forEach((file) -> {
+               System.out.println(file.getPath());
+           });
+        }
     }
 
-    @FXML
-    public void onActionBt2(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
-        Pane view = object.getPage("Screen2");
-        mainPane.setCenter(view);
-        mainPane.setMargin(view, new Insets(220, 20, 20, 50));
+    public void choosefilesencrypt(ActionEvent actionEvent) {
+        System.out.println(primaryStagePane.getId());
+        Stage stage = (Stage) primaryStagePane.getScene().getWindow();
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Text Files", "*.txt"),
+                new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
+                new FileChooser.ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
+                new FileChooser.ExtensionFilter("All Files", "*.*"));
+        List<File> selectedMultiOrOneFile = fileChooser.showOpenMultipleDialog(stage);
+        if (selectedMultiOrOneFile != null){
+            selectedMultiOrOneFile.forEach((file) -> {
+                // này là duyệt qua từng file
+                // vấn đề logic giải quyết ở đây
+                System.out.println(file.getPath());
+            });
+        }
     }
 
-    @FXML
-    public void onActionBt3(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
-        Pane view = object.getPage("Screen3");
-        mainPane.setCenter(view);
-        mainPane.setMargin(view, new Insets(220, 20, 20, 50));
+    public void choosefilesdecrypt(ActionEvent actionEvent) {
+        System.out.println(primaryStagePane.getId());
+        Stage stage = (Stage) primaryStagePane.getScene().getWindow();
+        DirectoryChooser directoryChooser = new DirectoryChooser();
+        File selectedDir = directoryChooser.showDialog(stage);
+
+        // phần này in ra được đường dẫn folder mình chọn
+        System.out.println(selectedDir.getAbsolutePath());
+        // in ra thử list file trong folder
+        File[] file = selectedDir.listFiles();
+        for (File f: file) {
+            System.out.println(f.getAbsolutePath());
+        }
     }
 
-    @FXML
-    public void onActionBt4(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
-        Pane view = object.getPage("Screen4");
-        mainPane.setCenter(view);
-        mainPane.setMargin(view, new Insets(220, 20, 20, 50));
-    }
-
-    @FXML
-    public void onActionBt5(ActionEvent actionEvent) {
-        FxmlLoader object = new FxmlLoader();
-        Pane view = object.getPage("Screen5");
-        mainPane.setCenter(view);
-        mainPane.setMargin(view, new Insets(220, 20, 20, 50));
+    public void choosefolderencrypt(ActionEvent actionEvent) {
+        System.out.println(primaryStagePane.getId());
+        Stage stage = (Stage) primaryStagePane.getScene().getWindow();
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.getExtensionFilters().addAll(
+                new FileChooser.ExtensionFilter("Text Files", "*.txt"),
+                new FileChooser.ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"),
+                new FileChooser.ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
+                new FileChooser.ExtensionFilter("All Files", "*.*"));
+        List<File> selectedMultiOrOneFile = fileChooser.showOpenMultipleDialog(stage);
+        if (selectedMultiOrOneFile != null){
+            selectedMultiOrOneFile.forEach((file) -> {
+                // này là duyệt qua từng file
+                // vấn đề logic giải quyết ở đây
+                System.out.println(file.getPath());
+            });
+        }
     }
 }
