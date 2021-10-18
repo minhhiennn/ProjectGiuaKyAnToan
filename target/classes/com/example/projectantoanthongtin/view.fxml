@@ -14,14 +14,14 @@
       <Icon content="ASSIGNMENT" layoutX="294.0" layoutY="52.0" scaleX="2.0" scaleY="2.0" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="65.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:C:\Users\minhh\OneDrive\Máy tính\logohacker.jpg" />
+            <Image url="@Image\logohacker.jpg" />
          </image>
       </ImageView>
       <Icon content="ASSIGNMENT_IND" layoutX="294.0" layoutY="93.0" scaleX="2.0" scaleY="2.0" />
       <Icon content="ASSIGNMENT_LATE" layoutX="294.0" layoutY="134.0" scaleX="2.0" scaleY="2.0" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="385.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="file:C:\Users\minhh\OneDrive\Máy tính\logoanonymous.jpg" />
+            <Image url="@Image\logoanonymous.jpg" />
          </image>
       </ImageView>
       <Text fill="#5285c3" layoutX="114.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We do not forget, we do not forgive, expect us" wrappingWidth="371.13671875">
@@ -32,8 +32,8 @@
       <Pane layoutX="26.0" layoutY="287.0" prefHeight="183.0" prefWidth="548.0" style="-fx-border-color: #696969;">
          <children>
             <Button layoutX="221.0" layoutY="28.0" mnemonicParsing="false" onAction="#choosefilesencrypt" style="-fx-pref-width: 100px;" text="Choose File" />
-            <Button layoutX="221.0" layoutY="67.0" mnemonicParsing="false" onAction="#choosefolderencrypt" style="-fx-pref-width: 100px;" text="Choose File" />
-            <Button layoutX="221.0" layoutY="106.0" mnemonicParsing="false" onAction="#choosefilesdecrypt" style="-fx-pref-width: 100px;" text="Choose Folder" />
+            <Button layoutX="221.0" layoutY="67.0" mnemonicParsing="false" onAction="#choosefilesdecrypt" style="-fx-pref-width: 100px;" text="Choose File" />
+            <Button layoutX="221.0" layoutY="106.0" mnemonicParsing="false" onAction="#choosefolderencrypt" style="-fx-pref-width: 100px;" text="Choose Folder" />
             <Text fill="WHITE" layoutX="59.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn file(nhiều) mã hóa" />
             <Text fill="WHITE" layoutX="59.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn file(nhiều) giải mã" />
             <Text fill="WHITE" layoutX="59.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn folder mã hóa " />
