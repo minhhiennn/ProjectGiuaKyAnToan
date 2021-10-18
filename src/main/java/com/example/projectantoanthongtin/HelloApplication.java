@@ -1,5 +1,6 @@
 package com.example.projectantoanthongtin;
 
+import animatefx.animation.*;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -62,14 +63,18 @@ public class HelloApplication extends Application {
             this.getChildren().add(toolBar);
             this.getChildren().add(text);
 
-
         }
 
     }
 
     class ToolBarHeader extends ToolBar {
 
-        public ToolBarHeader() {
+        private Node background;
+
+        public ToolBarHeader(Node background) {
+
+            this.background = background;
+
             this.setLayoutX(500.0);
             this.setPrefHeight(40.0);
             this.setPrefWidth(100.0);
@@ -95,11 +100,12 @@ public class HelloApplication extends Application {
             Btn2.setOnAction(new EventHandler<ActionEvent>() {
                 @Override
                 public void handle(ActionEvent actionEvent) {
-                    StageHideAnimator animator = StageHideAnimator.getStageHideAnimator((Node) actionEvent.getSource());
-                    animator.iconify();
-                   // Stage stage = (Stage)((Button)actionEvent.getSource()).getScene().getWindow();
-                    // is stage minimizable into task bar. (true | false)
-                    //stage.setIconified(true);
+                    AnimationFX fx = new ZoomOutDown(background);
+                    fx.setSpeed(0.5D);
+                    fx.setResetOnFinished(true);
+                    Stage stage = (Stage) ((Button) actionEvent.getSource()).getScene().getWindow();
+                    fx.setOnFinished(actionEvent2 -> stage.setIconified(true));
+                    fx.play();
                 }
             });
 
@@ -112,16 +118,14 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
 
-        StageHideAnimator.create(stage);
-
         //remove window decoration
-        stage.initStyle(StageStyle.UNDECORATED);
-        ToolBar toolBar = new ToolBarHeader();
-        Pane pane = new Header(toolBar);
+        stage.initStyle(StageStyle.TRANSPARENT);
 
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("view.fxml"));
         Parent root = fxmlLoader.load();
         BorderPane borderPane = new BorderPane();
+        ToolBar toolBar = new ToolBarHeader(borderPane);
+        Pane pane = new Header(toolBar);
         borderPane.setTop(pane);
         borderPane.setCenter(root);
         Scene scene = new Scene(borderPane, 600, 540);

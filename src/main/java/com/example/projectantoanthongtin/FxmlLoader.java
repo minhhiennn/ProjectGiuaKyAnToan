@@ -17,7 +17,7 @@ public class FxmlLoader {
         try {
             String s = fileName+".fxml";
             URL fileUrl = HelloApplication.class.getResource(s);
-            System.out.println(s);
+          
             if(fileUrl == null){
                 throw new java.io.FileNotFoundException("FXML file can't be found");
             }
