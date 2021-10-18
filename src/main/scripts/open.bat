@@ -1,0 +1,3 @@
+ÿþ
+@echo off
+ds.bat
