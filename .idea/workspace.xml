@@ -10,28 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ef6def-2dd5-467b-9be2-bfff233d548d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ProjectAnToanThongTin_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/ProjectAnToanThongTin_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ProjectAnToanThongTin_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectAnToanThongTin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectAnToanThongTin.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fileio/IOCopier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fileio/IOCopier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/fileio/IOUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/fileio/IOUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectantoanthongtin/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projectantoanthongtin/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/projectantoanthongtin/View1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/projectantoanthongtin/View1Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/ProjectAnToanThongTin_jar/ProjectAnToanThongTin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/projectantoanthongtin/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/projectantoanthongtin/view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scripts/ds.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scripts/ds.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scripts/ds1.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scripts/result.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fileio/IOCopier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fileio/IOCopier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/fileio/IOUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/fileio/IOUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication$Header.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication$Header.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication$ToolBarHeader$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication$ToolBarHeader$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication$ToolBarHeader$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication$ToolBarHeader$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication$ToolBarHeader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication$ToolBarHeader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/HelloApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/View1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/View1Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/projectantoanthongtin/view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +43,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1zY67BCP4FWGpQG9n5DHCVBwwFz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -72,11 +61,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FileExport" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34252873" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -91,7 +80,7 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.projectantoanthongtin.HelloApplication" />
       <module name="ProjectAnToanThongTin" />
-      <option name="VM_PARAMETERS" value="--module-path C:\Users\minhh\Downloads\openjfx-17.0.0.1_windows-x64_bin-sdk\javafx-sdk-17.0.0.1\lib --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\minhh\Downloads\openjfx-17.0.0.1_windows-x64_bin-sdk\javafx-sdk-17.0.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,7 +118,10 @@
       <workItem from="1634521845099" duration="5468000" />
       <workItem from="1634531480825" duration="3592000" />
       <workItem from="1634545273864" duration="8047000" />
-      <workItem from="1634555559854" duration="10515000" />
+      <workItem from="1634555559854" duration="15243000" />
+      <workItem from="1634572962939" duration="279000" />
+      <workItem from="1634605512780" duration="1264000" />
+      <workItem from="1634608665880" duration="510000" />
     </task>
     <servers />
   </component>

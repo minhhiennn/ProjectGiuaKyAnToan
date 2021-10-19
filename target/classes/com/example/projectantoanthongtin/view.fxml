@@ -14,14 +14,14 @@
       <Icon content="ASSIGNMENT" layoutX="294.0" layoutY="52.0" scaleX="2.0" scaleY="2.0" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="65.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Image\logohacker.jpg" />
+            <Image url="@Image/logohacker.jpg" />
          </image>
       </ImageView>
       <Icon content="ASSIGNMENT_IND" layoutX="294.0" layoutY="93.0" scaleX="2.0" scaleY="2.0" />
       <Icon content="ASSIGNMENT_LATE" layoutX="294.0" layoutY="134.0" scaleX="2.0" scaleY="2.0" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="385.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Image\logoanonymous.jpg" />
+            <Image url="@Image/logoanonymous.jpg" />
          </image>
       </ImageView>
       <Text fill="#5285c3" layoutX="114.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We do not forget, we do not forgive, expect us" wrappingWidth="371.13671875">
